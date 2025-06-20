@@ -248,7 +248,7 @@ class OneDriveAdapter extends OneDriveUtilityAdapter implements FilesystemAdapte
     /**
      * @throws Exception|GuzzleException
      */
-    public function read(string $path): string
+    public function read(string $path)
     {
         try {
             if (!($stream = $this->readStream($path))) {
